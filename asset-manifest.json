@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/omega/static/css/main.f8a176c8.css",
+    "main.js": "/omega/static/js/main.4ac53f32.js",
+    "static/js/787.44681934.chunk.js": "/omega/static/js/787.44681934.chunk.js",
+    "index.html": "/omega/index.html",
+    "main.f8a176c8.css.map": "/omega/static/css/main.f8a176c8.css.map",
+    "main.4ac53f32.js.map": "/omega/static/js/main.4ac53f32.js.map",
+    "787.44681934.chunk.js.map": "/omega/static/js/787.44681934.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8a176c8.css",
+    "static/js/main.4ac53f32.js"
+  ]
+}

@@ -1,56 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { CardList } from "./components/CardList";
+import { AppButton } from "./components/AppButton";
+import { CardModal } from "./components/CardModal";
+import { useCreateModal } from "./hooks/useCreateModal";
+import styles from "./App.module.scss";
 
 function App() {
+  const { showModal } = useCreateModal(CardModal);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
+    <div className={styles.app}>
+      <header className={styles.header}>
+        <h1 className={styles.heading}>Список покупок</h1>
+        <AppButton text="Создать" onClick={showModal} />
       </header>
+      <CardList />
     </div>
   );
 }

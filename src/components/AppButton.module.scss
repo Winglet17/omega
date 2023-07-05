@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+
+  text-align: center;
+
+  &-default {
+    background-color: seagreen;
+  }
+
+  &-red {
+    background-color: crimson;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
